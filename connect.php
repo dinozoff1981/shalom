@@ -6,9 +6,10 @@
 //$database="shalomdb";
 
 $severname='remotemysql.com';
-$database='eaz1Ivi4PE';
+
 $username='eaz1Ivi4PE';
 $password='pgTGK9YvMB';
+$database='eaz1Ivi4PE';
 
 $con=new mysqli($servername,$username,$password,$database);
 if(!$con){
