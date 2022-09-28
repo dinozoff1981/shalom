@@ -5,14 +5,16 @@
 //$password="";
 //$database="shalomdb";
 
-$severname='remotemysql.com';
+$host='remotemysql.com';
+$db='eaz1Ivi4PE';
+$user='eaz1Ivi4PE';
+$pass='pgTGK9YvMB';
+$charset='utf8mb4';
 
-$username='eaz1Ivi4PE';
-$password='pgTGK9YvMB';
-$database='eaz1Ivi4PE';
 
-$con=new mysqli($servername,$username,$password,$database);
-if(!$con){
+$dsn="mysql:host=$host;dbname=$db;charset=$charset";
+//$con=new mysqli($servername,$username,$password,$database);
+if(!$dsn){
     die(mysqli_error($con));
 }
 
