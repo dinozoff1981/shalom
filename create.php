@@ -25,9 +25,9 @@ $bank=$_POST['bank'];
 
 
 
-$sql="INSERT INTO shalom2(ticketnumber,invno,company,fullname,destination,issuedate,fare,ar,ap,vendorcom,shalomcom,bank)".
+$dsn="INSERT INTO shalom2(ticketnumber,invno,company,fullname,destination,issuedate,fare,ar,ap,vendorcom,shalomcom,bank)".
 "VALUES ('$ticketnumber','$invno','$company','$fullname','$destination','$issuedate','$fare','$ar','$ap','$vendorcom','$shalomcom','$bank')";
-$result=mysqli_query($con,$sql);
+$result=mysqli_query($con,$dsn);
 
 if($result){
 

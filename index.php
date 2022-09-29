@@ -135,7 +135,7 @@ img
                 <?php
                 include 'connect.php';
                 $sql="SELECT * FROM shalom2";
-                $result=mysqli_query($con,$sql);
+                $result=mysqli_query($con,$dsn);
 
                 if($result){
 

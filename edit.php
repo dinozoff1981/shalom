@@ -40,7 +40,7 @@ if(isset($_POST['submit'])){
 
 $sql="UPDATE shalom2 SET ticketnumber=$ticketnumber,ticketnumber='$ticketnumber', invno='$invno',company='$company',fullname='$fullname',destination='$destination',issuedate='$issuedate',fare='$fare',ar='$ar',ap='$ap',vendorcom='$vendorcom',shalomcom='$shalomcom',bank='$bank' WHERE ticketnumber=$ticketnumber";
 
-$result=mysqli_query($con,$sql);
+$result=mysqli_query($con,$dsn);
 
 if($result){
  
