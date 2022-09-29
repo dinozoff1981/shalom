@@ -146,11 +146,16 @@ if($result){
 
         </div>
         
-        <div class="mb-3">
-        <label >Vendor Comm</label>
-        <input type="text" class="form-control" placeholder="Vender Comm" name="vendorcom" value=<?php echo $vendorcom;?>>
+        <div class="from-group mb-3">
+                                <label for="">Vendor</label>
+                                <select name="vendorcom" class="form-control">
+                                    <option value="">--Select a Vendor--</option>
+                                    <option value="Ethiopian Airlines">Ethiopian Airlines</option>
+                                    <option value="Dawe Emede">Dawe Emede</option>
+                                    <option value="Four Winds ">Four Winds</option>
 
-        </div>
+                                </select>
+                            </div>
 
         <div class="mb-3">
         <label >Shalom Comm</label>

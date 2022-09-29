@@ -57,7 +57,11 @@ h2
                                 <div class="col-md-4">
                                     <button type="submit" class="btn btn-primary">Search</button>
                                 </div>
+
+                               
                             </div>
+
+
                         </form>
 
                         <div class="row">
@@ -106,6 +110,8 @@ h2
                                                     <label for="">Issue Date</label>
                                                     <input type="text" value="<?= $row['issuedate']; ?>" class="form-control">
                                                 </div>
+
+
                                                 
                                                 <?php
                                             }
@@ -116,17 +122,28 @@ h2
                                         }
                                     }
                                    
+                                        
+                         
+                                        
+                                        
                                 ?>
+                                                
+                                                
+
+                                                
 
                             </div>
                         </div>
 
                     </div>
                 </div>
-
+                <br>
+                <button class="btn btn-danger btn-m" class="text-dark"><a href="index.php">Done</a></button>
             </div>
         </div>
+          
     </div>
+   
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>

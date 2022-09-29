@@ -40,6 +40,41 @@ if($result){
 
 }
 
+if(isset($_POST['more'])){
+
+  $ticketnumber=$_POST['ticketnumber'];
+  $invno=$_POST['invno'];
+  $company=$_POST['company'];
+  $fullname=$_POST['fullname'];
+  $destination=$_POST['destination'];
+  $issuedate=date('Y-m-d', strtotime($_POST['issuedate']));
+  $fare=$_POST['fare'];
+  $ar=$_POST['ar'];
+  $ap=$_POST['ap'];
+  $vendorcom=$_POST['vendorcom'];
+  $shalomcom=$_POST['shalomcom'];
+  $bank=$_POST['bank'];
+  
+
+  
+  $sql="INSERT INTO shalom2(ticketnumber,invno,company,fullname,destination,issuedate,fare,ar,ap,vendorcom,shalomcom,bank)".
+  "VALUES ('$ticketnumber','$invno','$company','$fullname','$destination','$issuedate','$fare','$ar','$ap','$vendorcom','$shalomcom','$bank')";
+  $result=mysqli_query($con,$sql);
+  
+  if($result){
+  
+    header('location:create.php');
+  }else{
+  
+    die(mysqli_error($con));
+  }
+  
+  
+  }
+
+
+  
+
 ?>
 
 
@@ -146,23 +181,31 @@ img
             </div>
 
             <div class="mb-3">
-            <label >A/R</label>
+            <label >Account Receivable</label>
             <input type="text" class="form-control" placeholder="Account Receivable" name="ar"required="true">
 
             </div>
 
              
             <div class="mb-3">
-            <label >A/P</label>
+            <label >Account Payable</label>
             <input type="text" class="form-control" placeholder="Account Payable" name="ap"required="true">
 
             </div>
             
-            <div class="mb-3">
-            <label >Vendor Comm</label>
-            <input type="text" class="form-control" placeholder="Vender Comm" name="vendorcom"required="true">
+        
 
-            </div>
+
+            <div class="from-group mb-3">
+                                <label for="">Vendor</label>
+                                <select name="vendorcom" class="form-control">
+                                    <option value="">--Select a Vendor--</option>
+                                    <option value="Ethiopian Airlines">Ethiopian Airlines</option>
+                                    <option value="Dawe Emede">Dawe Emede</option>
+                                    <option value="Four Winds ">Four Winds</option>
+
+                                </select>
+                            </div>
 
             <div class="mb-3">
             <label >Shalom Comm</label>
@@ -196,7 +239,9 @@ img
 
 
 
-            <button type="submit" class="btn btn-primary" name="submit"><a href="index.php"></a> Submit</button>
+            <button type="submit" class="btn btn-primary" name="submit"><a href="index.php"></a> Done</button>
+            <button type="submit" class="btn btn-primary" name="more"><a href="create.php"></a> Add More</button>
+
     </form>
 
 

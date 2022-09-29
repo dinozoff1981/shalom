@@ -84,7 +84,7 @@ img
 
     display: flexbox;
     justify-content: center;
-    margin-left: 350px;
+    margin-left: 360px;
 }
 
 </style> 
@@ -124,7 +124,7 @@ img
                     <th scope="col">Fare</th>
                     <th scope="col">A/R</th>
                     <th scope="col">A/P</th>
-                    <th scope="col">Vendor Comm</th>
+                    <th scope="col">Vendor</th>
                     <th scope="col">Shalom Comm</th>
                     <th scope="col">Bank</th>
                     <th scope="col">Action</th>
@@ -134,6 +134,7 @@ img
 
                 <?php
                 include 'connect.php';
+                
                 $sql="SELECT * FROM shalom2";
                 $result=mysqli_query($con,$sql);
 
