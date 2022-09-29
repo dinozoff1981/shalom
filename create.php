@@ -196,7 +196,7 @@ img
 
 
 
-            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+            <button type="submit" class="btn btn-primary" name="submit"><a href="index.php"></a> Submit</button>
     </form>
 
 
