@@ -31,7 +31,7 @@ $result=mysqli_query($con,$sql);
 
 if($result){
 
-  header('location:index.php');
+  header('location:home.php');
 }else{
 
   die(mysqli_error($con));
@@ -239,7 +239,7 @@ img
 
 
 
-            <button type="submit" class="btn btn-primary" name="submit"><a href="index.php"></a> Done</button>
+            <button type="submit" class="btn btn-primary" name="submit"><a href="home.php"></a> Done</button>
             <button type="submit" class="btn btn-primary" name="more"><a href="create.php"></a> Add More</button>
 
     </form>

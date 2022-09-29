@@ -44,7 +44,7 @@ $result=mysqli_query($con,$sql);
 
 if($result){
  
-  header('location:index.php');
+  header('location:home.php');
 }else{
 
   die(mysqli_error($con));
@@ -80,7 +80,7 @@ if($result){
 
   <body>
 
-  <h2>Update A Friend</h2>
+  <h2>Update A Customer</h2>
   <div class="container my-5">
 
 <form method="POST">

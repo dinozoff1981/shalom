@@ -12,7 +12,7 @@ if(!$con){
 //$con=new mysqli("localhost","root","","shalomdb");
 
 //if(!$con){
-   // die('Connection Failed'. mysqli_connect_error($con));
+   //die('Connection Failed'. mysqli_connect_error($con));
 //}
 
 ?>

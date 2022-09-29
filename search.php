@@ -138,7 +138,7 @@ h2
                     </div>
                 </div>
                 <br>
-                <button class="btn btn-danger btn-m" class="text-dark"><a href="index.php">Done</a></button>
+                <button class="btn btn-danger btn-m" class="text-dark"><a href="home.php">Done</a></button>
             </div>
         </div>
           
