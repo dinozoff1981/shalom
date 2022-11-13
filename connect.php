@@ -1,7 +1,7 @@
 <?php
 
 
-$con=new mysqli("remotemysql.com","eaz1Ivi4PE","pgTGK9YvMB","eaz1Ivi4PE");
+$con=new mysqli("sql.freedb.tech","freedb_tensae","m%wFa#8hNwgpY6z","freedb_shalomdb");
 
 
 if(!$con){
